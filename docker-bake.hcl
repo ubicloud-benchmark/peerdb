@@ -27,7 +27,7 @@ target "flow-api" {
   target     = "flow-api"
   platforms = [
     "linux/amd64",
-    "linux/arm64",
+    // "linux/arm64",
   ]
   args = {
     PEERDB_VERSION_SHA_SHORT = "${SHA_SHORT}"
@@ -44,7 +44,7 @@ target "flow-snapshot-worker" {
   target     = "flow-snapshot-worker"
   platforms = [
     "linux/amd64",
-    "linux/arm64",
+    // "linux/arm64",
   ]
   args = {
     PEERDB_VERSION_SHA_SHORT = "${SHA_SHORT}"
@@ -61,7 +61,7 @@ target "flow-worker" {
   target     = "flow-worker"
   platforms = [
     "linux/amd64",
-    "linux/arm64",
+    // "linux/arm64",
   ]
   args = {
     PEERDB_VERSION_SHA_SHORT = "${SHA_SHORT}"
@@ -78,7 +78,7 @@ target "flow-maintenance" {
   target     = "flow-maintenance"
   platforms = [
     "linux/amd64",
-    "linux/arm64",
+    # "linux/arm64",
   ]
   args = {
     PEERDB_VERSION_SHA_SHORT = "${SHA_SHORT}"
@@ -94,7 +94,7 @@ target "peerdb" {
   dockerfile = "stacks/peerdb-server.Dockerfile"
   platforms = [
     "linux/amd64",
-    "linux/arm64",
+    // "linux/arm64",
   ]
   args = {
     PEERDB_VERSION_SHA_SHORT = "${SHA_SHORT}"
@@ -110,7 +110,7 @@ target "peerdb-ui" {
   dockerfile = "stacks/peerdb-ui.Dockerfile"
   platforms = [
     "linux/amd64",
-    "linux/arm64",
+    // "linux/arm64",
   ]
   args = {
     PEERDB_VERSION_SHA_SHORT = "${SHA_SHORT}"
